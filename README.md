@@ -2,9 +2,7 @@
 
 [Eat Da Burger](https://eatdaburger-tll.herokuapp.com/) is a web app built with Node.js, Express, and MySQL. It is a burger logger app where users can submit the names of burgers to add to the menu. Each burger on the menu has a `Devour` button next to it. Clicking on the button will move the burger's name to the list of devoured burgers.
 
-## Walkthrough of Eat Da Burger
 
-Click here for a [video walkthrough](https://vimeo.com/313946605) of Eat Da Burger.
 
 ## Technology Used
 
