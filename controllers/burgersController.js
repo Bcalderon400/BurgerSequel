@@ -8,14 +8,14 @@ const burger = require("../models");
 // define app's routes
 // get all burger names
 router.get("/", function(req, res) {
-    burger.selectAll(function(data) {
+    db.Burger.findAll(function(data) {
         res.render("index", { burgers: data });
     });
 });
 
 // add burger name to menu
 router.post("/api/burgers", function(req, res) {
-    burger.create({
+    db.Burger.create({
         burgerName: req.body.burgerName
     }).then(function(data) {
         res.json(data)
@@ -25,7 +25,7 @@ router.post("/api/burgers", function(req, res) {
 
 // devour a specific burger
 router.put("/api/burgers/:id", function(req, res) {
-    burger.update({
+    db.Burger.update({
         devoured: true
     }, {
         where: {

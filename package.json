@@ -4,6 +4,7 @@
     "description": "restaurant app where users can input the names of burgers they would like to eat and devour submitted burgers.",
     "main": "server.js",
     "scripts": {
+        "run": "watch",
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js"
     },
