@@ -1,27 +1,27 @@
 {
-  "name": "burgersequel",
-  "version": "1.0.0",
-  "description": "restaurant app where users can input the names of burgers they would like to eat and devour submitted burgers.",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Bcalderon400/BurgerSequel.git"
-  },
-  "author": "Brian Calderon",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Bcalderon400/BurgerSequel/issues"
-  },
-  "homepage": "https://github.com/Bcalderon400/BurgerSequel#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "handlebars": "^4.3.4",
-    "mysql": "^2.17.1",
-    "nodemon": "^1.19.2",
-    "sequelize": "^5.19.1"
-  }
+    "name": "burgersequel",
+    "version": "1.0.0",
+    "description": "restaurant app where users can input the names of burgers they would like to eat and devour submitted burgers.",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bcalderon400/BurgerSequel.git"
+    },
+    "author": "Brian Calderon",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Bcalderon400/BurgerSequel/issues"
+    },
+    "homepage": "https://github.com/Bcalderon400/BurgerSequel#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0",
+        "mysql2": "^1.7.0",
+        "nodemon": "^1.19.2",
+        "sequelize": "^5.19.1"
+    }
 }
