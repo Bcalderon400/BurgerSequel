@@ -1,0 +1,54 @@
+<!-- Logo and Title -->
+<div class="row">
+  <div class="col-12">
+    <img class="logo" src="/assets/images/burger.svg" alt="burger">
+    <h1 class="title">Eat Da Burger!</h1>
+  </div>
+</div>
+
+<!-- Form to Submit Burger Names -->
+<div class="row">
+  <div class="col-12">
+    <form id="addForm">
+      <div class="form-group">
+        <label for="burgerName">Enter a burger name to add it to the menu:</label>
+        <input id="burgerName" class="form-control" type="text" placeholder="If Looks Could Kale" required>
+      </div>
+      <button type="submit">Add to Menu</button>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <!-- Burger Menu -->
+  <div class="col-12 col-md-6">
+    <div class="card">
+      <div class="card-header">On the Menu</div>
+      <div class="card-body">
+        <ul>
+          {{#each burgers}}
+            {{#unless devoured}}
+              {{> burgers/burgerBlock devoured=false}}
+            {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Devoured Burgers List -->
+  <div class="col-12 col-md-6">
+    <div class="card devoured-card">
+      <div class="card-header devoured-header">Devoured Burgers</div>
+      <div class="card-body">
+        <ul>
+          {{#each burgers}}
+            {{#if devoured}}
+              {{> burgers/burgerBlock devoured=true}}
+            {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
