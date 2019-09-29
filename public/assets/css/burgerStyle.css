@@ -1,76 +1,82 @@
 body {
-  background-color: #191919;
-  color: #ffffff;
-  font-family: "Ubuntu";
-  font-weight: 200;
+    background-image: url("../img/2812883.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 200;
 }
 
 .row {
-  margin: 20px 0px;
+    margin: 20px 0px;
 }
 
-.logo {
-  display: block;
-  margin: auto;
-  width: 100px;
+label {
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .title {
-  color: #a449ff;
-  font-family: "Orbitron", sans-serif;
-  text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 5em;
+    -webkit-text-stroke: 2px black;
+    color: white;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 90px;
 }
 
 #addForm {
-  margin: auto;
-  max-width: 40%;
+    margin: auto;
+    max-width: 40%;
 }
 
 #addForm button {
-  width: 100%;
+    width: 100%;
 }
 
 #addForm button,
 .devourBtns {
-  background-color: #a449ff;
-  border: none;
-  color: #ffffff;
-  font-weight: 100;
+    background-color: #A53E0B;
+    border: none;
+    color: #ffffff;
+    font-weight: 100;
 }
 
 .card {
-  background-color: #2a054f;
-  box-shadow: 0 0 10px 3px #713da5;
-  margin: 30px 0px;
+    background-color: #232022;
+    /* box-shadow: 0 0 10px 3px #713da5; */
+    margin: 30px 0px;
 }
 
 .card-header {
-  color: #ffffff;
-  font-size: 24px;
-  text-align: center;
+    color: #DDA559;
+    font-size: 24px;
+    text-align: center;
 }
 
-.card-body, ul {
-  margin: 0;
-  padding: 0;
+.card-body,
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 li {
-  color: #b683ea;
-  list-style-type: none;
-  margin: 5px;
-  padding: 15px;
+    color: #b683ea;
+    list-style-type: none;
+    margin: 5px;
+    padding: 15px;
 }
 
 .devourBtns {
-  float: right;
+    float: right;
 }
 
 .devoured-header {
-  color: #b5b5b5;
+    color: #DDA559;
 }
 
 .devoured {
-  color: #7a48ad;
-  text-decoration: line-through;
+    color: #7a48ad;
+    text-decoration: line-through;
 }

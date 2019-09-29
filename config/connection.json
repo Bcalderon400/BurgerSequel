@@ -1,7 +1,7 @@
 {
     "development": {
         "username": "root",
-        "password": "",
+        "password": "Theboss420!",
         "database": "burgers_db",
         "host": "127.0.0.1",
         "port": 3306,
@@ -10,7 +10,7 @@
     "test": {
         "username": "root",
         "password": "",
-        "database": "database_test",
+        "database": "burgers_db",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },

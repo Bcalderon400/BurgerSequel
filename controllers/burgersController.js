@@ -1,14 +1,16 @@
+// require models
+const db = require("../models");
+
 // create app router
 const express = require("express");
 const router = express.Router();
 
-// model require
-const burger = require("../models");
+const burger = require("../models/burger.js");
 
 // define app's routes
 // get all burger names
 router.get("/", function(req, res) {
-    db.Burger.findAll(function(data) {
+    db.Burger.findAll().then(function(data) {
         res.render("index", { burgers: data });
     });
 });
@@ -18,10 +20,9 @@ router.post("/api/burgers", function(req, res) {
     db.Burger.create({
         burgerName: req.body.burgerName
     }).then(function(data) {
-        res.json(data)
-    })
+        res.json(data);
+    });
 });
-
 
 // devour a specific burger
 router.put("/api/burgers/:id", function(req, res) {
